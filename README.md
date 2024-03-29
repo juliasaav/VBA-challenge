@@ -1,7 +1,6 @@
 Sub Ticker()
-
-
-'TICKER SYMBOL
+        
+        'TICKER SYMBOL
         Dim ws As Worksheet
         Dim lastRow As Long
         For Each ws In ThisWorkbook.Worksheets
