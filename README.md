@@ -1,5 +1,6 @@
 Sub Ticker()
 
+
 'TICKER SYMBOL
         Dim ws As Worksheet
         Dim lastRow As Long
