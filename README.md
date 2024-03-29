@@ -20,6 +20,7 @@ Sub Ticker()
             'remove repeating ticker symbols
     
         Next i
+        'I used GPT for the following line of code
         ws.Range("I1:I" & lastRow).RemoveDuplicates Columns:=1, Header:=xlNoY
     'YEARLY CHANGE,PERCENT CHANGE
         'open & close price, yearly change, volume count
@@ -97,6 +98,7 @@ Sub Ticker()
         maxTV = Application.Max(ws.Range("L:L"))
         ws.Cells(4, "Q").Value = maxTV
          'find the ticker symbol that corresponds to the maxTVtick
+         'I used the match function- (got help from GPT and peers for this part)
             maxTVtick = Application.Match(maxTV, ws.Range("L:L"), 0)
             ws.Cells(4, "P").Value = ws.Cells(maxTVtick, "I")
       
